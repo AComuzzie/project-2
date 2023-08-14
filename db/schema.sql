@@ -1,2 +1,0 @@
-DROP DATABASE IF EXISTS jobBoard_db;
-CREATE DATABASE jobBoard_db;
