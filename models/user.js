@@ -35,6 +35,10 @@ User.init(
         len: [8],
       },
     },
+    business_name: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     hooks: {
@@ -56,5 +60,3 @@ User.init(
 );
 
 module.exports = User;
-
-//add business name to user model

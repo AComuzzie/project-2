@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 class Listing extends Model {}
-Listing.init( //change to more relevant fields below
+Listing.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -40,7 +40,7 @@ Listing.init( //change to more relevant fields below
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'user', // Reference the 'user' model, which we set in User.js as its 'modelName' property
         key: 'id',
       }
     }
@@ -50,7 +50,7 @@ Listing.init( //change to more relevant fields below
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'event'
+    modelName: 'listing'
   }
 );
 module.exports = Listing;
