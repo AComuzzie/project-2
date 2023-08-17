@@ -1,7 +1,10 @@
 const router = require('express').Router();
 const { Listing } = require('../../models');
+const withAuth = require('../../utils/auth.js');
 
-router.post('/', async (req, res) => {
+
+// creates a job listing
+router.post('/', withAuth, async (req, res) => {
   try {
     const newListing = await Listing.create({
       ...req.body,
@@ -14,7 +17,28 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+// updates a job listing
+router.put('/:id', withAuth, async (req, res) => {
+  try {
+    const listingData = await Listing.update(req.body, {
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    if (!listingData) {
+      res.status(404).json({ message: 'No listing found with this id!' });
+      return;
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+// delets a job listing
+router.delete('/:id', withAuth, async (req, res) => {
   try {
     const listingData = await Listing.destroy({
       where: {
