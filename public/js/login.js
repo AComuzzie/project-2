@@ -1,4 +1,4 @@
-const loginFormHandler = async (event) => {
+const jobLoginFormHandler = async (event) => {
     event.preventDefault();
   
     const email = document.querySelector('#email-login').value.trim();
@@ -14,12 +14,13 @@ const loginFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/');
       } else {
-        alert('Failed to log in.');
+        alert('Failed to log in.'); // displays the alert when unsuccessful.
       }
     }
   };
   
   
-  document
-    .querySelector('.login-form')
-    .addEventListener('submit', loginFormHandler);
+  const jobLoginForm = document.querySelector('.job-login-form');
+  if (jobLoginForm) {
+    jobLoginForm.addEventListener('submit', jobLoginFormHandler);
+  }
