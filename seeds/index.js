@@ -1,4 +1,5 @@
-const user = require("./userData2.js");
+// const user = require("./userData2.js"); I changed this to seedUsers to match the the await method below
+const seedUsers = require("./userData2.js");
 const jobPosts= require("./jobPostsdata.js");
 const sequelize = require("../config/connection");
 const seedAll = async () => {
