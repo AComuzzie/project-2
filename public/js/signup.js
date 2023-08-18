@@ -1,4 +1,4 @@
-const signupFormHandler = async (event) => {
+const jobSignupFormHandler = async (event) => {
     event.preventDefault();
   
     const email = document.querySelector('#email-signup').value.trim();
@@ -6,6 +6,7 @@ const signupFormHandler = async (event) => {
   
     if (email && password) {
       const response = await fetch('/api/users', {
+
         method: 'POST',
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
@@ -19,6 +20,7 @@ const signupFormHandler = async (event) => {
     }
   };
 
-  document
-    .querySelector('.signup-form')
-    .addEventListener('submit', signupFormHandler);  
+  const jobSignupForm = document.querySelector('#signup-form');
+  if (jobSignupForm) {
+    jobSignupForm.addEventListener('submit', jobSignupFormHandler);
+  } 
