@@ -50,11 +50,15 @@ The project's primary focus is to "build a collaborative full-stack application 
 
 ## User Story
 
+```md
 AS an employer who is looking for candiates to fill job openings
 I WANT a CMS-style Job Board
 SO THAT I can publish job openings, with the required attributes like job titles, job descriptions, job ids, and job locations.
+```
 
 ## Acceptance Criteria
+
+```md
 
 
 
@@ -65,13 +69,17 @@ SO THAT I can publish job openings, with the required attributes like job titles
 
 ## Usage:
 
-1. Option: A. Account login for an existing user: click on "login" in the navigation menu - enter your Email and Password then click "Sign In" button.
-- Option: B. Account Sign Up for a new account: click on "Sign Up" in the navigation menu. Enter your Email and Password then click "Sign Up" to proceed.
-2. Once you have an account, you can create blog posts and comment on other users' posts.
-3. Create a job post: click on the "dashboard" option in the navigation menu and select "Create a New Job Post."
-4. Enter a title and contents for your Job Listing, then click "Create Post" to save and publish.
-5. View existing job listings by clicking on "Home" in the navigation menu.
+#### Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
 
+1. Option: A) Account login for an existing user: click on "login" in the navigation menu - enter your Email and Password then click "Sign In" button.
+- Option: B) Account Sign Up for a new account: click on "Sign Up" in the navigation menu. Enter your Email and Password then click "Sign Up" to proceed.
+2. Once you have an account, you can create blog posts and comment on other users' posts.
+3. Create a blog post: click on the "dashboard" option in the navigation menu and select "Create a New Blog Post."
+4. Enter a title and contents for your Chess Blog Contribution, then click "Create Post" to save and publish.
+5. View existing blog posts by clicking on "Home" in the navigation menu.
+6. Comment: to view or "add a new comment" go to any blog post, click on any blog post - once open, you may view the comment history as well as add a new comments.
+7. Edit or delete your blog post: click on the "dashboard" option in the navigation menu and select the post you wish to edit or delete.
+8. Account Log out: click on "logout" in the navigation menu.
 
 ## Screenshots
 
@@ -80,20 +88,27 @@ SO THAT I can publish job openings, with the required attributes like job titles
 
 
 ## Built With:
-
 - JSON:[ JSON](https://www.npmjs.com/package/json)
-- JavaScript
-- Node.js 
-- Express.js:["4.18.2"]
-- Bcryptjs: [5.1.0]
-- Sequelize: [6.32.1]
-- Dotenv: [16.3.1]
-- Express Handlebars: [7.1.2]
-- Express-Session: [1.17.3]
-- Passport-oauth2: [1.7.0]
-- MySql2
-- Visual Studio Code:
+- Dynamic JavaScript
+- Node.js [Version 16.18.1](https://nodejs.org/en/blog/release/v16.18.1/)
+- Express.js:[Express.js](https://expressjs.com/en/starter/installing.html)
+- Bcryptjs: [2.4.3](https://www.npmjs.com/package/bcryptjs)
+- Connect Session Store using Sequelize: [7.0.4](https://www.npmjs.com/package/connect-session-sequelize)
+- Dotenv: [8.6.0](https://www.npmjs.com/package/dotenv)
+- Express: [4.17.1](https://www.npmjs.com/package/express)
+- Express Handlebars: [5.2.0](https://www.npmjs.com/package/express-handlebars)
+- Express-Session: [1.17.1](https://www.npmjs.com/package/express-session)
+- Handlebars.js: [4.7.6](https://www.npmjs.com/package/handlebars)
+- Node MySql2: [2.3.3](https://www.npmjs.com/package/mysql2)
+- Sequelize: [6.29.3](https://www.npmjs.com/package/sequelize)
 - License Badge: [Shields.io](https://shields.io/)
+- Visual Studio Code: [Website](https://code.visualstudio.com/)
+
+## Getting Started
+
+Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+
+You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
 ## Future Developments
 
