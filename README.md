@@ -126,6 +126,6 @@ SOFTWARE.
 
 ## Authors
 
-Follow us on Github at [Andrew Commuzzie](https://github.com/AComuzzie), .[Ibrahim Allison](https://github.com/IbrahimAllison)[Maren Christensen](https://github.com/mj470)[Landen Walker](https://github.com/lwalker107) Additional questions or concerns? Please feel free to contact me at kaitlynatif90@hotmail.com.
+Follow us on Github at [Andrew Commuzzie](https://github.com/AComuzzie), .[Ibrahim Allison](https://github.com/IbrahimAllison)[Maren Christensen](https://github.com/mj470)[Landen Walker](https://github.com/lwalker107).
 
 © 2023. Confidential and Proprietary. All Rights Reserved.
