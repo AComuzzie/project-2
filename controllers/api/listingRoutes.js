@@ -1,6 +1,8 @@
 const router = require('express').Router();
-const { Listing } = require('../models');
-const withAuth = require('../utils/auth.js');
+const { Listing } = require('../../models');
+const withAuth = require('../../utils/auth');
+// const { Listing } = require('./models');
+// const withAuth = require('/utils/auth');
 
 // creates a job listing
 router.post('/', withAuth, async (req, res) => {
