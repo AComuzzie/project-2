@@ -2,60 +2,34 @@ const router = require('express').Router();
 const { Listing } = require('../models');
 const withAuth = require('../utils/auth.js');
 
+router.get('/', (req, res) => {
+  Listing.findAll ({
+    attributes: [
+      'id', 
+      'business_name', 
+      'job_title', 
+      'date_created', 
+      'job_description', 
+      'job_location', 
+      'email'
+    ],
 
-// creates a job listing
-router.post('/', withAuth, async (req, res) => {
-  try {
-    const newListing = await Listing.create({
-      ...req.body,
-      user_id: req.session.user_id,
+  })
+  .then(dbListingData => {
+    const listings = dbListingData.map(listing => listing.get({ plain: true }));
+    res.render('jobboard', {
+      listings
     });
-
-    res.status(200).json(newListing);
-  } catch (err) {
-    res.status(400).json(err);
-  }
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  })
 });
 
-// updates a job listing
-router.put('/:id', withAuth, async (req, res) => {
-  try {
-    const listingData = await Listing.update(req.body, {
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
+router.get('/login', (req, res) => {
+ res.render('login') 
 
-    if (!listingData) {
-      res.status(404).json({ message: 'No listing found with this id!' });
-      return;
-    }
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-
-// delets a job listing
-router.delete('/:id', withAuth, async (req, res) => {
-  try {
-    const listingData = await Listing.destroy({
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
-
-    if (!listingData) {
-      res.status(404).json({ message: 'No listing found with this id!' });
-      return;
-    }
-
-    res.status(200).json(listingData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
 });
 
 module.exports = router;
