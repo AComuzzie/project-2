@@ -11,7 +11,7 @@
 </head>
 
 <body> <!-- add links to nav buttons -->
-    <header class="hero">
+    <header class="heroes" style="border-style: solid; background-color: aquamarine;">
         <nav class= "navbar">
         <ul>
             <li style="text-align: right; list-style-type: none;"><a href="../jobboard.handlebars"> Job Listings </a> </li>
@@ -20,7 +20,7 @@
         </ul>
 
     </nav>
-        <h1 style="text-align: center;">JOB BOARD</h1> 
+        <h1 class="hero" style="text-align: center;">JOB BOARD</h1> 
     </header>
 
     <main>
@@ -29,11 +29,12 @@
 
 <footer>
     <p></p>
-</footer>
-        
+</footer>        
+    
     {{#each js}}
         <script src="/js/{{this}}"></script>
     {{/each}}
+
 </body>
 
 </html>
