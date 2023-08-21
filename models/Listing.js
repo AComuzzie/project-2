@@ -12,6 +12,7 @@ Listing.init(
     business_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: 'New Business',
     },
     job_title: {
       type: DataTypes.STRING,
@@ -24,15 +25,18 @@ Listing.init(
     job_description: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: 'New Job Description',
     },
     job_location: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: 'New Job Location',
     },
     email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
+        defaultValue: 'default@example.com',
         validate: {
           isEmail: true,
         }
