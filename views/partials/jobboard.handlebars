@@ -1,6 +1,6 @@
 {{!-- are these connections right? --}}
 
-<div class="card">
+{{!-- <div class="card">
     <h2 class="Title"> {{job_title}} </h2>
     <h2 class="business"> {{business_name}} </h2>
 
@@ -12,4 +12,14 @@
     <h4 class="email"> {{email}} </h4>
     <h4 class="post-id"> {{id}} </h4>
     
+</div> --}}
+
+<div>
+    <body class="job post">
+        <ul>
+            {{#each data}}
+            <li>{{this.columnName}}</li>
+            {{/each}}
+        </ul>
+    </body>
 </div>
