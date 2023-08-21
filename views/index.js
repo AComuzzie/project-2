@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
   })
   .then(dbListingData => {
     const listings = dbListingData.map(listing => listing.get({ plain: true }));
-    res.render('jobboard', {
+    res.render('home', {
       listings
     });
   })
@@ -37,7 +37,7 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/jobboard', (req, res) => {
-  res.render('jobboard')
+  res.redirect('/')
 });
 
 router.get('/dashboard', (req, res) => {
