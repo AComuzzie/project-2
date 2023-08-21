@@ -11,12 +11,12 @@
 </head>
 
 <body> <!-- add links to nav buttons -->
-    <header class="hero">
+    <header class="hero" style="background-color:aquamarine">
         <nav class= "navbar">
         <ul>
-            <li style="text-align: right; list-style-type: none;"><a href="../jobboard.handlebars"> Job Listings </a> </li>
-            <li style="text-align: right; list-style-type: none;"><a href="../partials/dashboard.handlebars"> Dashboard </a> </li>
-            <li style="text-align: right; list-style-type: none;"> <a href="../login.handlebars"> Login </a></li>
+            <li style="text-align: right; list-style-type: none;"><a href="/jobboard"> Job Listings </a> </li>
+            <li style="text-align: right; list-style-type: none;"><a href="/dashboard"> Dashboard </a> </li>
+            <li style="text-align: right; list-style-type: none;"> <a href="/login"> Login </a></li>
         </ul>
 
     </nav>
@@ -27,8 +27,8 @@
         {{{body}}}
     </main>
 
-<footer>
-    <p></p>
+<footer class="footer" style="background-color:aquamarine; height: 2.5rem; width: 100%; position:absolute; bottom: 0;">
+    <p style="color:black; text-align: center" > Created by: Andrew Comuzzie, Maren Christensen, Landen Walker, and Ibrahim Allison</p>
 </footer>
         
     {{#each js}}
