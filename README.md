@@ -18,7 +18,7 @@
 
 The era of submitting paper job applications by the applicants, and publishing job listings in the print media by the employers had gone. The modern job listings require an employer to digitally list their vacant positions and job descriptions over the Internet or on their Websites. These job openings are normally promoted on the Job Boards by the prospective employers seeking to find qualified candidates with the required Knowledge, Skills, and Abilities that match or commensurate with the job requirements and job descriptions.
 
-The project's primary focus is to "build a collaborative full-stack application that oombine a robust back end -with servers, databases, advanced APIs, and user authentication—to an intuitive front end", where employers can publish their job listings and job openings. This site is built from scratch and deployed to Heroku. The project follows the requirements below:
+The project's primary focus is to "build a collaborative full-stack application that combine a robust back end with servers, databases, advanced APIs, and user authentication—to an intuitive front end", where employers can publish their job listings and job openings. This site is built from scratch and deployed to Heroku. The project follows the requirements below:
 
 ## Motivation for the Project
 
@@ -36,12 +36,15 @@ SO THAT I can publish job openings, with the required attributes like job titles
 
 Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
 
-1. Option: (A) Account login for an existing user: click on "Login" in the navigation menu - enter your Email and Password then click on the "Login" button.
-   - Option: (B) Account Sign Up for a new account: click on the Login button from the navigation menu. Click on "Sign Up Instead?" button below the Login button. Enter your Email and Password then click on "Sign Up" button to proceed.
-   - 
-2. Once you have an account, you can create job post(s).
+1. Option: (A) Account login for an existing user: click on "Login" in the navigation menu - enter your Email and Password 
+   then click on the "Login" button.
+   
+2. Option: (B) Account Sign Up for a new account: click on the Login button from the navigation menu. Click on "Sign Up 
+   Instead?" button below the Login button. Enter your Email and Password then click on "Sign Up" button to proceed.
+   
+3. Once you have an account, you can create job post(s).
   
-3. Create a job post: click on the "dashboard" option in the navigation menu and select "Create a New Listing page displays. Enter your responses into the following text boxes: Job Title, Business Name, Job Location, Job description, Contact Email, and Job Posted Date. Click on the Create button.
+4. Create a job post: click on the "dashboard" option in the navigation menu and select "Create a New Listing page displays. Enter your responses into the following text boxes: Job Title, Business Name, Job Location, Job description, Contact Email, and Job Posted Date. Click on the Create button.
 
 
 ## Screenshots
