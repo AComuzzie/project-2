@@ -32,4 +32,17 @@ router.get('/login', (req, res) => {
 
 });
 
+router.get('/signup', (req, res) => {
+  res.render('signup')
+});
+
+router.get('/jobboard', (req, res) => {
+  res.render('jobboard')
+});
+
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard')
+});
+
+
 module.exports = router;
