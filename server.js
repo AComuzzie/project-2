@@ -5,12 +5,14 @@ const path = require('path');
 const express = require('express');
 const request = require('express-request');
 const session = require('express-session');
+const authRoutes = require('./controllers/api/authRoutes');
 const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sequelize = require('./config/connection');
 const helpers = require('./utils/helpers');
 const oauth2 = require('passport-oauth2');
+const passport = require('passport');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -26,6 +28,8 @@ const sess = {
   };
   
   app.use(session(sess));
+  app.use(passport.initialize());
+  app.use(passport.session());
 
   
   const hbs = exphbs.create({ helpers });
@@ -38,6 +42,7 @@ const sess = {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.static(path.join(__dirname, 'public')));
   
+  app.use('/auth', authRoutes);
 
 
   app.use(require('./controllers/'));
