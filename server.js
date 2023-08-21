@@ -32,14 +32,23 @@ const sess = {
   
   app.engine('handlebars', hbs.engine);
   app.set('view engine', 'handlebars');
+  app.set('views', path.join(__dirname, 'views'));
   
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(express.static(path.join(__dirname, 'public')));
   
+
+
   app.use(require('./controllers/'));
+
+  const jobboardRoutes = require('./controllers');
+  app.use('/api', jobboardRoutes);
+
+  const viewRoutes = require('./views');
+  app.use('/', viewRoutes);
   
-  // sequelize.sync({ force: false }).then(() => {
-  //   app.listen(PORT, () => console.log(`Now listening on port ${PORT}!`));
-  // });
+  sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log(`Now listening on port ${PORT}!`));
+  });
   
