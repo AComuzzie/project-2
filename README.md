@@ -74,11 +74,10 @@ Visit the homepage, "Login" or "Sign Up" for an account if you don't already hav
 
 Here are the screenshots of the deployed application:
 
-![Alt text](image.png)
+![image](https://github.com/mj470/job-board-project-2/assets/116689797/75f1348b-d4f2-4b53-baf3-6ee6c579539a)
 
-![Alt text](image-1.png)
+![image](https://github.com/mj470/job-board-project-2/assets/116689797/f6e1955b-95b1-4b74-8b9b-e36303215b2f)
 
-![Alt text](image-2.png)
 
 
 - URL of Deployed Application: [Job Board Project 2](https://job-board-project-2-e40bf6d683ab.herokuapp.com/)
