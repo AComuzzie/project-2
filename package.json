@@ -15,7 +15,9 @@
   },
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon"
+    "watch": "nodemon",
+    "seeds": "node seeds.js"
+    
   },
   "name": "job-board-project-2",
   "description": "",

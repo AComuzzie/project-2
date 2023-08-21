@@ -3,13 +3,13 @@
 
 ## Table of Contents:
 - [Description](#Description)
+- [Motivation for the Project](#Motivation-for-the-Project)
 - [User Story](#User-Story)
-- [Acceptance Criteria](#Acceptance-Criteria)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Screenshots](#Screenshots)
 - [Built With](#Built-With)
-- [Future Developments](#Future Developments)
+- [Future Developments](#Future-Developments)
 - [License](#License)
 - [Authors](#Authors)
 
@@ -48,42 +48,40 @@ The project's primary focus is to "build a collaborative full-stack application 
 
 - Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
+## Motivation for the Project
+
+The importance of the Job Board and Job Listings in the information technology industry and the job market in general cannot be over-emphasized. The project team was encouraged to create a job board that is similar to the traditional and popular job boards like Indeed, Dice, Monster, Career Builder, etc.
+
+We plan to collaborate and expand the job board project at the end of the Boot Camp. Hopefully, we can also use it to search for jobs in the future. 
+
 ## User Story
 
-```md
 AS an employer who is looking for candiates to fill job openings
-I WANT a CMS-style Job Board
+I WANT a Job Board
 SO THAT I can publish job openings, with the required attributes like job titles, job descriptions, job ids, and job locations.
-```
-
-## Acceptance Criteria
-
-```md
-
-
-
-## Installation
-1. Clone the Repository from GitHub 
-(or) Download Zip Folder from Repository from GitHub
-2. Open the cloned (or downloaded) repository in any source code editor.
 
 ## Usage:
 
-#### Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
+Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
 
-1. Option: A) Account login for an existing user: click on "login" in the navigation menu - enter your Email and Password then click "Sign In" button.
-- Option: B) Account Sign Up for a new account: click on "Sign Up" in the navigation menu. Enter your Email and Password then click "Sign Up" to proceed.
-2. Once you have an account, you can create blog posts and comment on other users' posts.
-3. Create a blog post: click on the "dashboard" option in the navigation menu and select "Create a New Blog Post."
-4. Enter a title and contents for your Chess Blog Contribution, then click "Create Post" to save and publish.
-5. View existing blog posts by clicking on "Home" in the navigation menu.
-6. Comment: to view or "add a new comment" go to any blog post, click on any blog post - once open, you may view the comment history as well as add a new comments.
-7. Edit or delete your blog post: click on the "dashboard" option in the navigation menu and select the post you wish to edit or delete.
-8. Account Log out: click on "logout" in the navigation menu.
+1. Option: (A) Account login for an existing user: click on "Login" in the navigation menu - enter your Email and Password then click on the "Login" button.
+- Option: (B) Account Sign Up for a new account: click on the Login button from the navigation menu. Click on "Sign Up Instead?" button below the Login button. Enter your Email and Password then click on "Sign Up" button to proceed.
+2. Once you have an account, you can create job post(s).
+3. Create a job post: click on the "dashboard" option in the navigation menu and select "Create a New Listing page displays. Enter your responses into the following text boxes: Job Title, Business Name, Job Location, Job description, Contact Email, and Job Posted Date. Click on the Create button.
+
 
 ## Screenshots
 
-- URL of Deployed Application: [Job Board Project 2]()
+Here are the screenshots of the deployed application:
+
+![Alt text](image.png)
+
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
+
+- URL of Deployed Application: [Job Board Project 2](https://job-board-project-2-e40bf6d683ab.herokuapp.com/)
 - URL of GitHub Repository: [Job Board Project 2](http://www.github.com/mj470/job-board-project-2)
 
 
@@ -104,22 +102,23 @@ SO THAT I can publish job openings, with the required attributes like job titles
 - License Badge: [Shields.io](https://shields.io/)
 - Visual Studio Code: [Website](https://code.visualstudio.com/)
 
-## Getting Started
-
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
-
-You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
 ## Future Developments
 
-The team
+The team members plan to collaborate in the future to add the following functionalities to the project:
+
+a. The ability to store past job postings history within the dashboard.
+b. The addition of a job seeker or applicant profile.
+c. A search function.
+d. Set up profiles so that employers and applicants can save their jobs to their profiles and upload a resume.
+e. Include an api that automatically pulls job listings into the database.
 
 ## License
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Open Source Initiative Link](https://opensource.org/licenses/MIT)
 
 ### Copyright © 2023 
-```md
+```
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -141,6 +140,6 @@ SOFTWARE.
 
 ## Authors
 
-Follow us on Github at [Andrew Commuzzie](https://github.com/AComuzzie), .[Ibrahim Allison](https://github.com/IbrahimAllison)[Maren Christensen](https://github.com/mj470)[Landen Walker](https://github.com/lwalker107).
+Follow us on Github at [Andrew Commuzzie](https://github.com/AComuzzie), [Ibrahim Allison](https://github.com/IbrahimAllison), [Maren Christensen](https://github.com/mj470), and [Landen Walker](https://github.com/lwalker107).
 
 © 2023. Confidential and Proprietary. All Rights Reserved.
