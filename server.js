@@ -33,8 +33,6 @@ const sess = {
   app.engine('handlebars', hbs.engine);
   app.set('view engine', 'handlebars');
 
-  const jobboardRoutes = require('./controllers/jobboardRoutes');
-  app.use('/jobboard', jobboardRoutes);
   
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
