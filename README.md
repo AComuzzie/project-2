@@ -16,37 +16,9 @@
 
 ## Description
 
-The era of submitting paper job applications by the applicants, and publishing job listings by the employers had gone. The modern job listings require an employer to digitally list their vacant positions and job descriptions over the Internet or on their Websites. These job openings are normally promoted on the Job Boards by the prospective employers seeking to find qualified candidates with the required Knowledge, Skills, and Abilities that match or commensurate with the job requirements and job descriptions.
+The era of submitting paper job applications by the applicants, and publishing job listings in the print media by the employers had gone. The modern job listings require an employer to digitally list their vacant positions and job descriptions over the Internet or on their Websites. These job openings are normally promoted on the Job Boards by the prospective employers seeking to find qualified candidates with the required Knowledge, Skills, and Abilities that match or commensurate with the job requirements and job descriptions.
 
 The project's primary focus is to "build a collaborative full-stack application that oombine a robust back end -with servers, databases, advanced APIs, and user authentication—to an intuitive front end", where employers can publish their job listings and job openings. This site is built from scratch and deployed to Heroku. The project follows the requirements below:
-
-- Use Node.js and Express.js to create a RESTful API.
-
-- Use Handlebars.js as the template engine.
-
-- Use MySQL and the Sequelize ORM for the database.
-
-- Have both GET and POST routes for retrieving and adding new data.
-
-- Use at least one new library, package, or technology that we haven’t discussed.
-
-- Have a folder structure that meets the MVC paradigm.
-
-- Include authentication (express-session and cookies).
-
-- Protect API keys and sensitive information with environment variables.
-
-- Be deployed using Heroku (with data).
-
-- Have a polished UI.
-
-- Be responsive.
-
-- Be interactive (in other words, accept and respond to user input).
-
-- Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, and so on).
-
-- Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 ## Motivation for the Project
 
@@ -65,8 +37,10 @@ SO THAT I can publish job openings, with the required attributes like job titles
 Visit the homepage, "Login" or "Sign Up" for an account if you don't already have one.
 
 1. Option: (A) Account login for an existing user: click on "Login" in the navigation menu - enter your Email and Password then click on the "Login" button.
-- Option: (B) Account Sign Up for a new account: click on the Login button from the navigation menu. Click on "Sign Up Instead?" button below the Login button. Enter your Email and Password then click on "Sign Up" button to proceed.
+   - Option: (B) Account Sign Up for a new account: click on the Login button from the navigation menu. Click on "Sign Up Instead?" button below the Login button. Enter your Email and Password then click on "Sign Up" button to proceed.
+   - 
 2. Once you have an account, you can create job post(s).
+  
 3. Create a job post: click on the "dashboard" option in the navigation menu and select "Create a New Listing page displays. Enter your responses into the following text boxes: Job Title, Business Name, Job Location, Job description, Contact Email, and Job Posted Date. Click on the Create button.
 
 
@@ -107,9 +81,13 @@ Here are the screenshots of the deployed application:
 The team members plan to collaborate in the future to add the following functionalities to the project:
 
 a. The ability to store past job postings history within the dashboard.
+
 b. The addition of a job seeker or applicant profile.
+
 c. A search function.
+
 d. Set up profiles so that employers and applicants can save their jobs to their profiles and upload a resume.
+
 e. Include an api that automatically pulls job listings into the database.
 
 ## License
