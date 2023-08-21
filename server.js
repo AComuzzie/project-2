@@ -9,7 +9,7 @@ const authRoutes = require('./controllers/api/authRoutes');
 const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const sequelize = require('./config/connection');
+const sequelize = require('../config/config').production;
 const helpers = require('./utils/helpers');
 const oauth2 = require('passport-oauth2');
 const passport = require('passport');
